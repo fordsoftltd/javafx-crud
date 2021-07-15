@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="713.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="fordsoft.com.javafx.crud.dashboard.DashboardController">
+    <stylesheets>
+        <URL value="@/styles/dashboard.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tabData" layoutY="179.0" prefHeight="263.0" prefWidth="735.0">
+        <columns>
+          <TableColumn fx:id="namecol" prefWidth="141.0" text="Fullname" />
+            <TableColumn fx:id="emailcol" prefWidth="137.0" text="Email" />
+            <TableColumn fx:id="phonecol" prefWidth="119.0" text="Phone" />
+            <TableColumn fx:id="gendercol" prefWidth="112.0" text="Gender" />
+            <TableColumn fx:id="feecol" prefWidth="111.0" text="Fee" />
+            <TableColumn fx:id="datecol" prefWidth="112.0" text="Date created" />
+        </columns>
+      </TableView>
+      <TextField layoutX="214.0" layoutY="442.0" prefHeight="39.0" prefWidth="392.0" promptText="Search record" />
+   </children>
+</AnchorPane>
