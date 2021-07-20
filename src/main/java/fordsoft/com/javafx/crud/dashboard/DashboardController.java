@@ -5,7 +5,7 @@
  */
 package fordsoft.com.javafx.crud.dashboard;
 
-import fordsoft.com.javafx.crud.model.Student;
+import fordsoft.com.javafx.crud.model.Studentdto;
 import java.net.URL;
 import java.util.Date;
 import java.util.ResourceBundle;
@@ -13,6 +13,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -25,20 +26,23 @@ import javafx.scene.control.cell.PropertyValueFactory;
 public class DashboardController implements Initializable {
     
     @FXML
-    private TableView<Student> tabData;
+    private TableView<Studentdto> tabData;
     @FXML
-    private TableColumn<Student, String> namecol;
+    private TableColumn<Studentdto, String> namecol;
     @FXML
-    private TableColumn<Student, String> emailcol;
+    private TableColumn<Studentdto, String> emailcol;
     @FXML
-    private TableColumn<Student, String> phonecol;
+    private TableColumn<Studentdto, String> phonecol;
     @FXML
-    private TableColumn<Student, String> gendercol;
+    private TableColumn<Studentdto, String> gendercol;
     @FXML
-    private TableColumn<Student, Date> datecol;
+    private TableColumn<Studentdto, Date> datecol;
     @FXML
-    private TableColumn<Student, Double> feecol;
-    ObservableList<Student> list;
+    private TableColumn<Studentdto, Double> feecol;
+    @FXML
+    private DatePicker date;
+    
+    ObservableList<Studentdto> list;
 
     /**
      * Initializes the controller class.

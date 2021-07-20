@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author odofintimothy
  */
-public class Student {
+public class Studentdto {
     String name;
     String email;
     String phone;
